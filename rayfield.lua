@@ -653,7 +653,7 @@ local globalSuccess, globalResult = pcall(function()
 	LoadingFrame.Version.Text = Release
 
 
-	local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/icons.lua'))()
+	local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/icons.lua'))()
 
 	-- Variables
 
