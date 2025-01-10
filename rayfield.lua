@@ -3842,7 +3842,7 @@ local globalSuccess, globalResult = pcall(function()
 
 	if not useStudio then
 		local success, result = pcall(function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/boost.lua'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/boost.lua'))()
 		end)
 
 		if not success then
