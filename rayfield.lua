@@ -40,7 +40,7 @@ local useStudio = RunService:IsStudio() or false
 
 local settingsCreated = false
 local cachedSettings
-local prompt = useStudio and require(script.Parent.prompt) or loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/prompt.lua'))()
+local prompt = useStudio and require(script.Parent.prompt) or loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/prompt.lua'))()
 local request = (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request) or http_request or request
 
 
@@ -148,7 +148,7 @@ if not requestsDisabled then
 			if debugX then warn('Reporting Analytics') end
 			task.spawn(function()
 				local success, reporter = pcall(function()
-					return loadstring(game:HttpGet("https://analytics.sirius.menu/reporter"))()
+					return loadstring(game:HttpGet("https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/reporter"))()
 				end)
 				if success and reporter then
 					pcall(function()
@@ -650,7 +650,7 @@ Rayfield.DisplayOrder = 100
 LoadingFrame.Version.Text = Release
 
 
-local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/icons.lua'))()
+local Icons = useStudio and require(script.Parent.icons) or loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/refs/heads/main/icons.lua'))()
 
 -- Variables
 
@@ -3840,7 +3840,7 @@ end
 
 if not useStudio then
 	local success, result = pcall(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Sirius/refs/heads/request/boost.lua'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/axleoislost/rlfd/main/boost.lua'))()
 	end)
 
 	if not success then
